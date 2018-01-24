@@ -4,6 +4,7 @@
 // });
 
 
+
 var Player = {
   playerNumber: function(number) {
     this.number = number;
@@ -13,7 +14,6 @@ var Player = {
   },
   score: 0
 };
-
 
 var Dice = {
   sides: 6,
@@ -26,4 +26,15 @@ var Dice = {
   }
 }
 
-console.log(Dice.roll());
+
+
+$(document).ready(function(event){
+
+
+$("#roll").click(function(){
+
+  console.log(Dice.roll());
+
+});
+
+});

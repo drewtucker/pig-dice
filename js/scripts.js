@@ -3,17 +3,14 @@
 //
 // });
 
+var player1Total = 0;
+var player2Total = 0
 
 
-var Player = {
-  playerNumber: function(number) {
-    this.number = number;
-  },
-  playerTotal: function(points) {
-    this.score += points;
-  },
-  score: 0
-};
+var player1TurnTotal = 0;
+var player2TurnTotal = 0;
+
+
 
 var Dice = {
   sides: 6,

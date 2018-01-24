@@ -4,7 +4,18 @@
 // });
 
 
-var dice = {
+var Player = {
+  playerNumber: function(number) {
+    this.number = number;
+  },
+  playerTotal: function(points) {
+    this.score += points;
+  },
+  score: 0
+};
+
+
+var Dice = {
   sides: 6,
   roll: function() {
 
@@ -15,4 +26,4 @@ var dice = {
   }
 }
 
-console.log(dice.roll());
+console.log(Dice.roll());
